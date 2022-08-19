@@ -1,0 +1,38 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: sans-serif;
+    margin: 0;
+    background-color: #f9f9f9;
+}
+.contauner{
+    min-height: 100vh;
+    position: relative;
+}
+.box{
+    height: 150px;
+    width: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+}
+.box:nth-child(1){
+    background-color: red;
+    top: 20px;
+    left: 120px;
+    z-index: -3;
+}
+.box:nth-child(2){
+    background-color: indigo;
+    top: 200px;
+    left: 330px;
+    z-index: 1;
+}
+.box:nth-child(3){
+    background-color: rgb(255, 251, 0);
+    top: 140px;
+    left: 210px;
+    z-index: 2;
+}
